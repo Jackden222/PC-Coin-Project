@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import external_link from '../assets/icons/external-link.svg';
 import circle_dollar from '../assets/icons/circle-dollar-sign.svg';
 import arrow_right from '../assets/icons/chevron-right.svg';
 import youTube from '../assets/icons/youtube.svg'
 import instagram from '../assets/icons/instagram.svg'
 import Twitter from '../assets/icons/twitter.svg'
+import Modal from '../components/ui/modal_task_content/subscribe_task/Modal_task';
+import Modal2 from '../components/ui/modal_task_content/subscribe_task/Modal_task2';
+
 
 const Task = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   return (
     <div className='pt-4 pb-[100px] bg-[#272727] w-full h-full'>
       <div className='flex items-center justify-center mt-12'>
@@ -23,8 +28,10 @@ const Task = () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" color='white' viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
           </div>
           <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to Ton community<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
-          
-          <img className='pr-2' src={external_link}/>
+          <button className=" rounded-lg" onClick={() => setModalOpen(true)}>
+            <img className='pr-2' src={external_link}/>
+          </button>
+          <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
         </div>
       </div>
 

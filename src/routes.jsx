@@ -7,6 +7,7 @@ import Shop from "./pages/Shop";
 import Friend from "./pages/Friend";
 import Airdrop from "./pages/Airdrop";
 
+
 const MainRoutes = createBrowserRouter([
     {
         path: '/',

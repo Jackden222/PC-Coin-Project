@@ -8,8 +8,12 @@ export default {
     fontFamily: {
       'Dm': ['DM Sans", sans-serif']
     },
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      }
+    },
   },
   plugins: [],
 }
-
