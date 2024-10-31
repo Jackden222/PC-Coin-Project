@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 const BottomNavigation = () => {
     const getUrl = useLocation()?.pathname;
   return (
-    <div className='fixed bottom-0 z-50 w-screen bg-gray-500/15 mb-1 rounded-2xl px-10 py-4 flex justify-between items-center'>
+    <div className='fixed bottom-0 z-50 w-screen bg-[#000000]/90 mb-1 rounded-2xl px-10 py-4 flex justify-between items-center'>
 
         <Link to={'/'} className='w-10 h-10'>
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" color='white' viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide  lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
