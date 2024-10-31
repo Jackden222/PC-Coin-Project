@@ -31,7 +31,7 @@ export const GameProvider = ({ children }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setBalance(prev => prev + profitPerHour);
-    }, 360); // 3600000 мс = 1 час
+    }, 3600000); // 3600000 мс = 1 час
 
     return () => clearInterval(interval);
   }, [profitPerHour]);
