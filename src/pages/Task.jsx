@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import external_link from '../assets/icons/external-link.svg';
 import circle_dollar from '../assets/icons/circle-dollar-sign.svg';
+import circle_check from '../assets/icons/circle-check-big.svg';
 import arrow_right from '../assets/icons/chevron-right.svg';
 import youTube from '../assets/icons/youtube.svg'
 import instagram from '../assets/icons/instagram.svg'
@@ -27,7 +28,7 @@ const Task = () => {
           <div className='ml-4 mr-4'>
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" color='white' viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
           </div>
-          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to Ton community<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
+          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to Ton community<span className='text-[13px] flex'>+900 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
           <button className=" rounded-lg" onClick={() => setModalOpen(true)}>
             <img className='pr-2' src={external_link}/>
           </button>
@@ -43,7 +44,10 @@ const Task = () => {
           </div>
           <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to Ton community<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
           
-          <img className='pr-2' src={external_link}/>
+          <button className=" rounded-lg" onClick={() => setModalOpen(true)}>
+            <img className='pr-2' src={external_link}/>
+          </button>
+          <Modal2 isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
         </div>
       </div>
 
@@ -84,7 +88,7 @@ const Task = () => {
           <div className='ml-4 mr-4'>
             <img className='pr-2' src={Twitter}/>
           </div>
-          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to our telegram<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
+          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to our twitter<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
           
           <img className='pr-2' src={external_link}/>
         </div>
@@ -95,9 +99,9 @@ const Task = () => {
           <div className='ml-4 mr-4'>
           <img className='pr-2' src={youTube}/>
           </div>
-          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to our telegram<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
+          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to our youtube<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
           
-          <img className='pr-2' src={external_link}/>
+          <img className='pr-2' src={circle_check}/>
         </div>
       </div>
 
@@ -106,7 +110,7 @@ const Task = () => {
           <div className='ml-4 mr-4'>
           <img className='pr-2' src={instagram}/>
           </div>
-          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to our telegram<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
+          <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to our instagram<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
           
           <img className='pr-2' src={external_link}/>
         </div>

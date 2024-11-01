@@ -6,9 +6,13 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'Dm': ['DM Sans", sans-serif']
+      'Dm': ['DM Sans", sans-serif'],
+      'Roboto': ['Roboto", sans-serif']
     },
     extend: {
+      backgroundImage: {
+        'back': "url('./public/back.jpg')",
+      },
       transitionProperty: {
         'height': 'height',
         'spacing': 'margin, padding',

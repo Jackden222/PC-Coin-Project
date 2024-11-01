@@ -6,6 +6,7 @@ import Task from "./pages/Task";
 import Shop from "./pages/Shop";
 import Friend from "./pages/Friend";
 import Airdrop from "./pages/Airdrop";
+import Second_Home from "./pages/Second_Home";
 
 
 const MainRoutes = createBrowserRouter([
@@ -33,6 +34,10 @@ const MainRoutes = createBrowserRouter([
             {
                 path: 'Airdrop',
                 element: <Airdrop/>,
+            },
+            {
+                path: 'SecondHome',
+                element: <Second_Home/>,
             },
         ]
     }

@@ -36,7 +36,7 @@ const Modal = ({ isOpen, onClose }) => {
         </div>
         <div className='flex justify-center'>
           <p className='flex text-white w-[20%] text-[18px] font-bold mb-4'>
-            <img className='ml-1' src={circle_dollar} width={30} />+900 
+            <img className='ml-1' src={circle_dollar} width={30} />+700 
           </p>
         </div>
         <div className="flex justify-center mt-4">

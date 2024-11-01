@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { useGame } from '../GameContext'
 import { Link, useLocation } from 'react-router-dom';
 
-const Home = () => {
+const Second_Home = () => {
 
   // const [data, setData] = useState(null)
 
@@ -25,15 +25,11 @@ const Home = () => {
         <div className='border-white/40 border-[1px] px-1 py-2 rounded-md text-md font-Roboto text-white'><span className='p-3'>Balance: {balance}</span></div>
         <div className='border-white/40 border-[1px] px-1 py-2 rounded-md text-md font-Roboto text-white'><span className='p-3'>Profit per hour: {profitPerHour}</span></div>
       </div>
-      <Link to={'/SecondHome'} className='flex justify-between items-center absolute right-0 m-4 rounded-full bg-black w-10 h-10'></Link>
-      <div className='flex items-center justify-center mt-[30%] '>
-        <div className='flex w-80 h-80'>
-          <img className='flex justify-between items-center h-[140px] w-[160px] m-auto' src={selectedItemImage} alt="" />
-        </div>
-      </div>
+
+        second home page
 
     </div>
   )
 }
 
-export default Home
+export default Second_Home
