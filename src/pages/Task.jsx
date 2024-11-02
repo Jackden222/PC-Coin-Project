@@ -8,10 +8,14 @@ import instagram from '../assets/icons/instagram.svg'
 import Twitter from '../assets/icons/twitter.svg'
 import Modal from '../components/ui/modal_task_content/subscribe_task/Modal_task';
 import Modal2 from '../components/ui/modal_task_content/subscribe_task/Modal_task2';
+import Modal3 from '../components/ui/modal_task_content/subscribe_task/Modal_task3';
 
 
 const Task = () => {
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen2, setModalOpen2] = useState(false);
+  const [isModalOpen3, setModalOpen3] = useState(false);
+
 
   return (
     <div className='pt-4 pb-[100px] bg-[#272727] w-full h-full'>
@@ -44,10 +48,10 @@ const Task = () => {
           </div>
           <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to Ton community<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
           
-          <button className=" rounded-lg" onClick={() => setModalOpen(true)}>
+          <button className=" rounded-lg" onClick={() => setModalOpen2(true)}>
             <img className='pr-2' src={external_link}/>
           </button>
-          <Modal2 isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+          <Modal2 isOpen={isModalOpen2} onClose={() => setModalOpen2(false)} />
         </div>
       </div>
 
@@ -58,7 +62,10 @@ const Task = () => {
           </div>
           <p className='flex flex-col text-white w-[70%] text-[15px] font-bold'>Subscribe to Ton community<span className='text-[13px] flex'>+700 <img className='ml-1' src={circle_dollar} width={20} /> </span></p>
           
-          <img className='pr-2' src={external_link}/>
+          <button className=" rounded-lg" onClick={() => setModalOpen3(true)}>
+            <img className='pr-2' src={external_link}/>
+          </button>
+          <Modal2 isOpen={isModalOpen3} onClose={() => setModalOpen3(false)} />
         </div>
       </div>
 

@@ -32,8 +32,14 @@ const Modal = ({ isOpen, onClose }) => {
         <img className='flex items-center justify-center ml-[40%] w-[80px] mb-6' src={Gift}/>
         <h2 className="flex justify-center text-lg font-bold text-white mb-6">Subscribe to our community</h2>
         <div className="flex justify-center mt-4">
-          <button className='flex items-center bg-[#29B6F6] p-3 pl-6 pr-6 rounded-3xl font-bold text-2xl text-white mb-12'>Subscribe</button>
-        </div>
+  <a 
+    href="https://t.me/blumcrypto" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className='flex items-center bg-[#29B6F6] p-3 pl-6 pr-6 rounded-3xl font-bold text-2xl text-white mb-12'>Subscribe</button>
+  </a>
+</div>
         <div className='flex justify-center'>
           <p className='flex text-white w-[20%] text-[18px] font-bold mb-4'>
             <img className='ml-1' src={circle_dollar} width={30} />+700 
