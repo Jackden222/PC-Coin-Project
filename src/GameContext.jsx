@@ -3,7 +3,7 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
-  const [balance, setBalance] = useState(100);
+  const [balance, setBalance] = useState(10000);
   const [profitPerHour, setProfitPerHour] = useState(0);
   const [purchasedItems, setPurchasedItems] = useState({});
   const [selectedItem, setSelectedItem] = useState(null);

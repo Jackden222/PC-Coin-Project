@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'back': "url('./public/back.jpg')",
+        'back-img': "url('./public/back.jpg')",
       },
       transitionProperty: {
         'height': 'height',
